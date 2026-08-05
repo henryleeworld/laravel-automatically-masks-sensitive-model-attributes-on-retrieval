@@ -19,7 +19,7 @@ class AuthenticationTest extends TestCase
         $user = User::factory()->create();
 
         $response = $this->post('/login', [
-            'email' => $user->email,
+            'email' => $user->getOriginal('email'),
             'password' => 'password',
         ]);
 
@@ -32,8 +32,8 @@ class AuthenticationTest extends TestCase
         $user = User::factory()->create();
 
         $this->post('/login', [
-            'email' => $user->email,
-            'password' => 'wrong-password',
+            'email' => $user->getOriginal('email'),
+            'password' => 'wrong-password'	,
         ]);
 
         $this->assertGuest();

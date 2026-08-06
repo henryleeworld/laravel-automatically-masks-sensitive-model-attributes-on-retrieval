@@ -1,4 +1,4 @@
-# Laravel 12 擷取時自動遮罩敏感模型屬性
+# Laravel 13 擷取時自動遮罩敏感模型屬性
 
 引入 irabbi360 的 laravel-attribute-mask 套件來擴增擷取時自動遮罩敏感模型屬性，將文字內容中的機密資料去識別化，包括儲存在資料表等容器結構中的文字。
 
@@ -35,5 +35,5 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/EoIjp3M.png)
+![](https://i.imgur.com/lBa0Kdh.png)
 > 將局部替換為星號符號以遮蔽機密資料

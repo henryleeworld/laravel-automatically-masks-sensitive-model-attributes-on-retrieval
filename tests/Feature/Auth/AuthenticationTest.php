@@ -33,7 +33,7 @@ class AuthenticationTest extends TestCase
 
         $this->post('/login', [
             'email' => $user->getOriginal('email'),
-            'password' => 'wrong-password'	,
+            'password' => 'wrong-password',
         ]);
 
         $this->assertGuest();
